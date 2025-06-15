@@ -1,0 +1,123 @@
+{
+  "categories": [
+    { "id": 1, "name": "Snack" },
+    { "id": 2, "name": "Minuman" },
+    { "id": 3, "name": "Makanan Berat" },
+    { "id": 4, "name": "Makanan Aja" }
+  ],
+  "suppliers": [
+    { "id": 1, "name": "PT. Snack Enak", "phone": "081234567890" },
+    { "id": 2, "name": "CV. Minuman Segar", "phone": "089876543210" },
+    { "id": 3, "name": "UD. Dapur Nusantara", "phone": "082134567891" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Keripik Singkong",
+      "price": 12000,
+      "stock": 150,
+      "category": { "id": 1, "name": "Snack" },
+      "supplier": { "id": 1, "name": "PT. Snack Enak", "phone": "081234567890" }
+    },
+    {
+      "id": 2,
+      "name": "Kacang Goreng",
+      "price": 10000,
+      "stock": 100,
+      "category": { "id": 1, "name": "Snack" },
+      "supplier": { "id": 1, "name": "PT. Snack Enak", "phone": "081234567890" }
+    },
+    {
+      "id": 3,
+      "name": "Popcorn",
+      "price": 15000,
+      "stock": 80,
+      "category": { "id": 1, "name": "Snack" },
+      "supplier": { "id": 1, "name": "PT. Snack Enak", "phone": "081234567890" }
+    },
+    {
+      "id": 4,
+      "name": "Es Teh Manis",
+      "price": 8000,
+      "stock": 200,
+      "category": { "id": 2, "name": "Minuman" },
+      "supplier": {
+        "id": 2,
+        "name": "CV. Minuman Segar",
+        "phone": "089876543210"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Jus Jeruk",
+      "price": 12000,
+      "stock": 150,
+      "category": { "id": 2, "name": "Minuman" },
+      "supplier": {
+        "id": 2,
+        "name": "CV. Minuman Segar",
+        "phone": "089876543210"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Air Mineral",
+      "price": 5000,
+      "stock": 300,
+      "category": { "id": 2, "name": "Minuman" },
+      "supplier": {
+        "id": 2,
+        "name": "CV. Minuman Segar",
+        "phone": "089876543210"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Nasi Goreng",
+      "price": 25000,
+      "stock": 50,
+      "category": { "id": 3, "name": "Makanan Berat" },
+      "supplier": {
+        "id": 3,
+        "name": "UD. Dapur Nusantara",
+        "phone": "082134567891"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Mie Ayam",
+      "price": 20000,
+      "stock": 60,
+      "category": { "id": 3, "name": "Makanan Berat" },
+      "supplier": {
+        "id": 3,
+        "name": "UD. Dapur Nusantara",
+        "phone": "082134567891"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Soto Ayam",
+      "price": 30000,
+      "stock": 40,
+      "category": { "id": 3, "name": "Makanan Berat" },
+      "supplier": {
+        "id": 3,
+        "name": "UD. Dapur Nusantara",
+        "phone": "082134567891"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Rendang",
+      "price": 40000,
+      "stock": 30,
+      "category": { "id": 3, "name": "Makanan Berat" },
+      "supplier": {
+        "id": 3,
+        "name": "UD. Dapur Nusantara",
+        "phone": "082134567891"
+      }
+    }
+  ]
+}
