@@ -24,5 +24,22 @@ Lisensi lengkap bisa dibaca di file `LICENSE`.
 
 ```bash
 git clone https://github.com/SiWahyu/React-Laravel-UAS.git
+```
+
+```bash
 cd React-Laravel-UAS
+```
+
+Buat File .env lalu tambahkan
+
+```bash
+VITE_API_URL=API_BE_Laravel
+```
+
+```bash
+npm i
+```
+
+```bash
+npm run dev
 ```
