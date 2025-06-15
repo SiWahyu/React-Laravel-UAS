@@ -1,4 +1,8 @@
-# 📌 Laravel + React App
+# 📦 Laravel + React App
+
+Aplikasi sederhana menggunakan **Laravel API** untuk backend dan **React** untuk frontend.
+
+---
 
 ## 📜 Lisensi
 
@@ -11,3 +15,14 @@ Kode ini bersifat **bebas dipakai untuk keperluan pribadi, pembelajaran, dan pro
 Lisensi lengkap bisa dibaca di file `LICENSE`.
 
 📩 Kontak: fwahyu839@gmail.com untuk permintaan izin khusus.
+
+---
+
+## 📥 Instalasi & Penggunaan
+
+### 📦 Clone Repository
+
+```bash
+git clone https://github.com/SiWahyu/React-Laravel-UAS.git
+cd React-Laravel-UAS
+```
