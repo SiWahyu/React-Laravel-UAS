@@ -91,7 +91,7 @@ export default function EditProductsPage() {
           <h1 className="text-2xl font-semibold">Edit Product</h1>
         </div>
 
-        <Link to={"/products"}>
+        <Link to={"/dashboard/products"}>
           <Button variant="outline" size="sm">
             <ArrowLeft />
             Back

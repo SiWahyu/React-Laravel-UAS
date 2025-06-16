@@ -70,7 +70,7 @@ export default function EditCategoriesPage() {
           <h1 className="text-2xl font-semibold">Edit Category</h1>
         </div>
 
-        <Link to={"/categories"}>
+        <Link to={"/dashboard/categories"}>
           <Button variant="outline" size="sm">
             <ArrowLeft />
             Back

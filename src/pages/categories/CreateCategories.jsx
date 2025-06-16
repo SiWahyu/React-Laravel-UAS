@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import FormInputCategories from "../../components/fragments/FormInputCategories";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -7,8 +7,6 @@ import AppLayouts from "../../components/layouts/AppLayouts";
 import { toast } from "react-toastify";
 
 export default function CreateCategoriesPage() {
-  const navigate = useNavigate();
-
   const { loading, addCategory } = useCategoryStore();
 
   const handleSubmit = async (data) => {
@@ -42,11 +40,7 @@ export default function CreateCategoriesPage() {
           <h1 className="text-2xl font-semibold">Create Category</h1>
         </div>
 
-        <Link
-          onClick={() => {
-            navigate(-1);
-          }}
-        >
+        <Link to={"/dashboard/categories"}>
           <Button variant="outline" size="sm">
             <ArrowLeft />
             Back

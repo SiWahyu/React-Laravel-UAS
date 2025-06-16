@@ -71,7 +71,7 @@ export default function EditSuppliersPage() {
           <h1 className="text-2xl font-semibold">Edit Supplier</h1>
         </div>
 
-        <Link to={"/suppliers"}>
+        <Link to={"/dashboard/suppliers"}>
           <Button variant="outline" size="sm">
             <ArrowLeft />
             Back

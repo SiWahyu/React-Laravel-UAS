@@ -66,7 +66,7 @@ export default function CreateProductsPage() {
           <h1 className="text-2xl font-semibold">Create Product</h1>
         </div>
 
-        <Link to={"/products"}>
+        <Link to={"/dashboard/products"}>
           <Button variant="outline" size="sm">
             <ArrowLeft />
             Back

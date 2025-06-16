@@ -41,7 +41,7 @@ export default function CreateSuppliersPage() {
           <h1 className="text-2xl font-semibold">Create Supplier</h1>
         </div>
 
-        <Link to={"/suppliers"}>
+        <Link to={"/dashboard/suppliers"}>
           <Button variant="outline" size="sm">
             <ArrowLeft />
             Back

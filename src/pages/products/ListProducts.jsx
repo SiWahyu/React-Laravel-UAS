@@ -172,7 +172,9 @@ export default function ListProductsPage() {
               <DropdownMenuLabel>Actions</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem
-                onClick={() => navigate(`/products/${row.getValue("id")}`)}
+                onClick={() =>
+                  navigate(`/dashboard/products/${row.getValue("id")}`)
+                }
               >
                 Edit
               </DropdownMenuItem>
@@ -212,7 +214,7 @@ export default function ListProductsPage() {
       <div className="flex p-8 m-4 md:m-10 border rounded-xl">
         <div className="w-full">
           <h1 className="mb-7 text-2xl font-semibold">Data Product</h1>
-          <Link to={"/products/create"}>
+          <Link to={"/dashboard/products/create"}>
             <Button variant="outline" size="sm">
               <Plus />
               Create

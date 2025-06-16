@@ -133,7 +133,9 @@ export default function CategoriesListPage() {
               <DropdownMenuLabel>Actions</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem
-                onClick={() => navigate(`/categories/${row.getValue("id")}`)}
+                onClick={() =>
+                  navigate(`/dashboard/categories/${row.getValue("id")}`)
+                }
               >
                 Edit
               </DropdownMenuItem>
@@ -173,7 +175,7 @@ export default function CategoriesListPage() {
       <div className="flex p-8 m-4 md:m-10 border rounded-xl">
         <div className="w-full">
           <h1 className="mb-7 text-2xl font-semibold">Data Category</h1>
-          <Link to={"/categories/create"}>
+          <Link to={"/dashboard/categories/create"}>
             <Button variant="outline" size="sm">
               <Plus />
               Create

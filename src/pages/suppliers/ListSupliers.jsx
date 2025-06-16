@@ -140,7 +140,9 @@ export default function ListSuppliersPage() {
               <DropdownMenuLabel>Actions</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem
-                onClick={() => navigate(`/suppliers/${row.getValue("id")}`)}
+                onClick={() =>
+                  navigate(`/dashboard/suppliers/${row.getValue("id")}`)
+                }
               >
                 Edit
               </DropdownMenuItem>
@@ -180,7 +182,7 @@ export default function ListSuppliersPage() {
       <div className="flex p-8 m-4 md:m-10 border rounded-xl">
         <div className="w-full">
           <h1 className="mb-7 text-2xl font-semibold">Data Supplier</h1>
-          <Link to={"/suppliers/create"}>
+          <Link to={"/dashboard/suppliers/create"}>
             <Button variant="outline" size="sm">
               <Plus />
               Create
