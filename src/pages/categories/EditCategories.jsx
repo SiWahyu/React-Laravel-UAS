@@ -30,7 +30,8 @@ export default function EditCategoriesPage() {
     }
 
     loadData();
-  }, [categories.length, fetchCategories, findCategoryById, id]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
 
   const handleSubmit = async (data) => {
     setLoadingSubmit(true);

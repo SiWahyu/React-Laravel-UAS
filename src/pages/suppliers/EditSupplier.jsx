@@ -21,13 +21,17 @@ export default function EditSuppliersPage() {
   const notFound = useSupplierStore((state) => state.notFound);
 
   useEffect(() => {
-    if (suppliers.length === 0) {
-      fetchSuppliers();
-    } else {
-      const cat = findSupplierById(id);
-      setSupplier(cat);
+    async function loadData() {
+      if (suppliers.length === 0) {
+        await fetchSuppliers();
+      }
+      const sup = findSupplierById(id);
+      setSupplier(sup);
     }
-  }, [suppliers, fetchSuppliers, findSupplierById, id]);
+
+    loadData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
 
   const handleSubmit = async (data) => {
     setLoadingSubmit(true);
