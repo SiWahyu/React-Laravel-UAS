@@ -24,7 +24,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../stores/useAuthStore";
-// import { useAuth } from "../../context/AuthContext";
 
 const formSchema = z.object({
   email: z.string().trim().email().nonempty({ message: "Email harus diisi" }),
@@ -50,7 +49,7 @@ const LoginPage = () => {
       await loginUser(data);
 
       if (!loading) {
-        navigate("/categories");
+        navigate("/dashboard");
       }
     } catch (err) {
       console.error(err);

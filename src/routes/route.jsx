@@ -11,6 +11,7 @@ import CreateProductsPage from "../pages/products/CreateProducts";
 import EditProductsPage from "../pages/products/EditProducts";
 import LoginPage from "../pages/auth/Login";
 import ProtectedRoute from "../components/ProtectedRoute";
+import DashboardPage from "../pages/dashboard/Data";
 
 const router = createBrowserRouter([
   {
@@ -25,43 +26,47 @@ const router = createBrowserRouter([
     element: <ProtectedRoute />,
     children: [
       {
-        path: "/categories",
+        path: "/dashboard",
+        element: <DashboardPage />,
+      },
+      {
+        path: "/dashboard/categories",
         element: <CategoriesListPage />,
       },
       {
-        path: "/categories",
+        path: "/dashboard/categories",
         element: <CategoriesListPage />,
       },
       {
-        path: "/categories/create",
+        path: "/dashboard/categories/create",
         element: <CreateCategoriesPage />,
       },
       {
-        path: "/categories/:id",
+        path: "/dashboard/categories/:id",
         element: <EditCategoriesPage />,
       },
       {
-        path: "/suppliers",
+        path: "/dashboard/suppliers",
         element: <ListSuppliersPage />,
       },
       {
-        path: "/suppliers/create",
+        path: "/dashboard/suppliers/create",
         element: <CreateSuppliersPage />,
       },
       {
-        path: "/suppliers/:id",
+        path: "/dashboard/suppliers/:id",
         element: <EditSuppliersPage />,
       },
       {
-        path: "/products",
+        path: "/dashboard/products",
         element: <ListProductsPage />,
       },
       {
-        path: "/products/create",
+        path: "/dashboard/products/create",
         element: <CreateProductsPage />,
       },
       {
-        path: "/products/:id",
+        path: "/dashboard/products/:id",
         element: <EditProductsPage />,
       },
     ],

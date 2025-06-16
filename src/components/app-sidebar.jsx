@@ -24,7 +24,7 @@ const data = {
       items: [
         {
           title: "Data",
-          url: "#",
+          url: "/dashboard",
         },
       ],
     },
@@ -34,11 +34,11 @@ const data = {
       items: [
         {
           title: "List Category",
-          url: "/categories",
+          url: "/dashboard/categories",
         },
         {
           title: "Create Category",
-          url: "/categories/create",
+          url: "/dashboard/categories/create",
         },
       ],
     },
@@ -48,11 +48,11 @@ const data = {
       items: [
         {
           title: "List Supplier",
-          url: "/suppliers",
+          url: "/dashboard/suppliers",
         },
         {
           title: "Create Supplier",
-          url: "/suppliers/create",
+          url: "/dashboard/suppliers/create",
         },
       ],
     },
@@ -62,11 +62,11 @@ const data = {
       items: [
         {
           title: "List Products",
-          url: "/products",
+          url: "/dashboard/products",
         },
         {
           title: "Create Products",
-          url: "/products/create",
+          url: "/dashboard/products/create",
         },
       ],
     },
