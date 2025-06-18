@@ -38,7 +38,7 @@ export const useAuthStore = create(
         } catch (error) {
           console.error("Logout error:", error);
         }
-        set({ user: null, token: null });
+        set({ user: null, token: null, message: null });
       },
 
       fetchUser: async () => {
